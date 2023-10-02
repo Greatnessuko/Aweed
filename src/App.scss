@@ -1,0 +1,135 @@
+.ball {
+	transition: transform 0.5s ease-in-out;
+	.clip {
+		width: 110px;
+		overflow: hidden;
+		border: 2px solid black;
+		border-radius: 100px;
+	}
+	.assistantMsg {
+		position: absolute;
+		bottom: 0;
+		/* max-width: 300px; */
+		background-color: white;
+		padding: 8px;
+		border: 1px solid;
+		border-radius: 8px;
+		font-size: 12px;
+		right: 116px;
+		/* left: 0; */
+		width: 178px;
+	}
+}
+
+.App {
+	min-height: 100dvh;
+
+	.nav {
+		padding-block: 30px;
+
+		&Wrapper {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.navList {
+			display: flex;
+			gap: 24px;
+		}
+	}
+
+	.container {
+		max-width: 1200px;
+		margin-inline: auto;
+	}
+
+	.btn {
+		border-radius: 12px;
+		border: 1px solid #1693eb;
+		background: #1693eb;
+		color: white;
+		padding: 20px 45px;
+	}
+
+	.icon {
+		border-radius: 50px;
+		border: 1px solid #fff;
+		background: #1693eb;
+		padding: 10px;
+		display: grid;
+		place-items: center;
+		transition: transform 0.5s ease-in-out;
+	}
+
+	.heroSection {
+		margin-top: 24px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 24px;
+
+		.content {
+			margin-top: 80px;
+			display: flex;
+			flex-direction: column;
+			gap: 30px;
+		}
+
+		.heroTitle {
+			color: #063658;
+			font-size: 50px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+		}
+	}
+
+	.flexBTN {
+		display: flex;
+		gap: 20px;
+		align-items: center;
+	}
+
+	.cardsSection {
+		background-color: #1693eb;
+		min-height: 600px;
+		margin-top: 30px;
+		display: grid;
+		place-items: center;
+		padding: 50px 20px;
+
+		.hairCards {
+			min-height: 300px;
+
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 24px;
+
+			.hairCard {
+				max-width: 390px;
+				background-color: white;
+				border-radius: 30px;
+				overflow: hidden;
+
+				h3 {
+					color: #063658;
+					font-size: 24px;
+					text-transform: capitalize;
+				}
+
+				.info {
+					display: flex;
+					justify-content: space-between;
+					padding-inline: 24px;
+					padding-block: 16px;
+					align-items: center;
+				}
+			}
+		}
+	}
+}
+
+footer {
+	background-color: #0a0807;
+	min-height: 230px;
+}
